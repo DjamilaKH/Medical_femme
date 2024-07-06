@@ -14,6 +14,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { InscritMedecinComponent } from './inscrit-medecin/inscrit-medecin.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/connexion', pathMatch: 'full' }, // Rediriger la route par défaut vers la connexion
   { path: '', component: AccueilComponent },
   { path: 'accueil', component: AccueilComponent },
   { path: 'about', component: AboutComponent },

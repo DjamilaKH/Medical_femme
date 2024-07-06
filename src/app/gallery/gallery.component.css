@@ -1,0 +1,23 @@
+.video-gallery-item .image-holder {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    /* Supprimez la boîte d'ombre */
+    box-shadow: none; /* ou box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0); */
+  
+    /* Pour uniformiser la taille des vidéos */
+    width: 70%; /* ou une largeur spécifique */
+    height: auto; /* ou une hauteur spécifique */
+  
+    /* Assurez-vous que le contenu vidéo est centré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-gallery-item .image-holder video {
+    width: 100%; /* Utilisez une largeur de 100% pour remplir le conteneur */
+    height: auto; /* Laissez la hauteur ajustée automatiquement pour maintenir le rapport d'aspect */
+    box-shadow: none;
+  }
+  

@@ -1,0 +1,51 @@
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    flex: 1 1 calc(25% - 20px); /* 25% width with 20px gap */
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.item .img-holder {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.item .img-holder img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item .image-content {
+    text-align: center;
+}
+
+.item .buttons {
+    display: flex;
+    flex-direction: column; /* Boutons disposés en colonne */
+    align-items: center; /* Centrage horizontal des boutons */
+    margin-top: 10px;
+}
+
+.item .buttons button {
+    width: 100%; /* Largeur de 100% pour remplir le conteneur */
+    padding: 8px 16px; /* Réduction de la hauteur des boutons */
+    background-color: #ef9eed;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 8px; /* Espacement après chaque bouton */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item .buttons button:hover {
+    background-color: #057cfb;
+}

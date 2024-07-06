@@ -18,6 +18,7 @@ import { InscritMedecinComponent } from './inscrit-medecin/inscrit-medecin.compo
 import { DetailleMedecienComponent } from './detaille-medecien/detaille-medecien.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { FormsModule } from '@angular/forms';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     InscritPatientComponent,
     InscritMedecinComponent,
     DetailleMedecienComponent,
-    ConnexionComponent
+    ConnexionComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
