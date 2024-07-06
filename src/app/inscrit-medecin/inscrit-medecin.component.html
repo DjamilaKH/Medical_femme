@@ -1,0 +1,59 @@
+<!-- 
+THEME: Medic | Medical HTML Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+HOMEPAGE: https://themefisher.com/products/medic-medical-template/
+DEMO: https://demo.themefisher.com/themefisher/medic/
+GITHUB: https://github.com/themefisher/Medic-Bootstrap-Medical-Template
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
+<div class="container">
+    <h2>Inscription du Médecin</h2>
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" ngModel required>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" ngModel required>
+
+        <label for="specialite">Spécialité :</label>
+        <input type="text" id="specialite" name="specialite" ngModel required>
+
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" ngModel required>
+
+        <label for="telephone">Numéro de téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" ngModel required>
+
+        <label for="adresse">Adresse :</label>
+        <textarea id="adresse" name="adresse" rows="4" ngModel required></textarea>
+
+        <label for="sexe">Sexe :</label>
+        <select id="sexe" name="sexe" ngModel required>
+            <option value="male">Homme</option>
+            <option value="female">Femme</option>
+            <option value="other">Autre</option>
+        </select>
+
+        <label for="availableSlots">Créneaux horaires disponibles :</label>
+        <textarea id="availableSlots" name="availableSlots" rows="4" placeholder="Format: YYYY-MM-DD HH:MM" ngModel required></textarea>
+
+        <label for="experience">Expérience professionnelle (années) :</label>
+        <input type="number" id="experience" name="experience" ngModel required min="0">
+
+        <label for="biographie">Biographie :</label>
+        <textarea id="biographie" name="biographie" rows="4" placeholder="Décrivez votre biographie pour cette licence" ngModel required></textarea>
+
+        <div class="photo-upload">
+            <label for="photoInput">Télécharger votre photo :</label>
+            <input type="file" id="photoInput" accept="image/*" (change)="previewPhoto($event)">
+            <img id="photoPreview" src="#" alt="Aperçu de la photo" style="display: none; max-width: 100%;">
+        </div>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+</div>

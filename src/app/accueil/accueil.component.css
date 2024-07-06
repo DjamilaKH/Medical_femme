@@ -1,0 +1,64 @@
+.top-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Ajoute de l'espace entre les icônes */
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    color: #ffc0cb; /* Couleur rose clair */
+    font-size: 20px; /* Taille des icônes */
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff69b4; /* Couleur rose vif au survol */
+}
+.slider-item {
+    position: relative; /* Pour permettre le positionnement absolu des enfants */
+}
+
+.top-right {
+    position: absolute;
+    top: 10px; /* Ajustez la valeur selon vos besoins */
+    right: 10px; /* Ajustez la valeur selon vos besoins */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10; /* S'assure que les icônes sont au-dessus de l'image de fond */
+    background: rgba(255, 255, 255, 0.3); /* Fond transparent */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 5px; /* Espacement interne */
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Espacement entre les icônes */
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    color: #ff69b4; /* Couleur rose clair */
+    font-size: 20px; /* Taille des icônes */
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff69b4; /* Couleur rose vif au survol */
+}

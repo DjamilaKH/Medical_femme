@@ -1,0 +1,111 @@
+<!-- 
+THEME: Medic | Medical HTML Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+HOMEPAGE: https://themefisher.com/products/medic-medical-template/
+DEMO: https://demo.themefisher.com/themefisher/medic/
+GITHUB: https://github.com/themefisher/Medic-Bootstrap-Medical-Template
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+
+<head>
+
+ <!-- ** Basic Page Needs ** -->
+ <meta charset="utf-8">
+ <title>Medic </title>
+
+ <!-- ** Mobile Specific Metas ** -->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Medical HTML Template">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+ <meta name="author" content="Themefisher">
+ <meta name="generator" content="Themefisher Medical HTML Template v1.0">
+ 
+ <!-- ** Plugins Needed for the Project ** -->
+ <!-- bootstrap -->
+ <style>
+ 
+</style>
+</head>
+
+
+
+<body>
+    <h1>Prendre rendez-vous</h1>
+    <form name="contact_form" class="default-form contact-form" action="!#" method="post">
+        <fieldset>
+            <legend>Informations Personnelles</legend>
+            <label for="nom_complet">Nom complet :</label>
+            <input type="text" id="nom_complet" name="nom_complet" required><br>
+
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" required><br>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required><br>
+
+            <label for="telephone">Numéro de téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required><br>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Informations Médicales</legend>
+            <label for="numero_securite_sociale">Numéro de Sécurité Sociale :</label>
+            <input type="text" id="numero_securite_sociale" name="numero_securite_sociale" required><br>
+
+          
+            <label for="allergies">Allergies :</label>
+            <textarea id="allergies" name="allergies" rows="2" cols="50"></textarea><br>
+
+            <label for="medicaments_actuels">Médicaments Actuels :</label>
+            <textarea id="medicaments_actuels" name="medicaments_actuels" rows="2" cols="50"></textarea><br>
+
+
+
+                    
+            <label for="type_sang">Type de sang :</label>
+            <select id="type_sang" name="type_sang" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+    
+    
+        </fieldset>
+        
+        <fieldset>
+            <legend>Rendez-vous</legend>
+            <label for="date_rendez_vous">Date du Rendez-vous :</label>
+            <input type="date" id="date_rendez_vous" name="date_rendez_vous" required><br>
+
+            <label for="heure_rendez_vous">Heure du Rendez-vous :</label>
+            <input type="time" id="heure_rendez_vous" name="heure_rendez_vous" required><br>
+
+            <label for="motif_consultation">Motif de la Consultation :</label>
+            <textarea id="motif_consultation" name="motif_consultation" rows="3" cols="50" required></textarea><br>
+
+        
+        </fieldset>
+        
+       
+        
+        <button type="submit">Soumettre</button>
+    </form>
+</body>
+</html>
