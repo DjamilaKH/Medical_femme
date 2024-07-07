@@ -1,19 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
 
-
-
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     padding: 20px;
-    ; /* Fond semi-transparent pour meilleure lisibilité */
+}
+
+.left-section {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-medecin {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.right-section {
+    flex: 2;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 h2 {
     text-align: center;
-    color: #333333;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
 }
 
 label {
@@ -31,7 +81,7 @@ select {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
 }
@@ -43,7 +93,7 @@ textarea {
 
 button[type="submit"] {
     background-color: #007bff;
-    color: #ffffff;
+    color: #fff;
     border: none;
     padding: 12px 20px;
     border-radius: 4px;
