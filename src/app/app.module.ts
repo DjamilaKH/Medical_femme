@@ -13,12 +13,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListeMedecinComponent } from './liste-medecin/liste-medecin.component';
 import { RendezVousComponent } from './rendez-vous/rendez-vous.component';
-import { InscritPatientComponent } from './inscrit-patient/inscrit-patient.component';
 import { InscritMedecinComponent } from './inscrit-medecin/inscrit-medecin.component';
 import { DetailleMedecienComponent } from './detaille-medecien/detaille-medecien.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
+import { PatientInscritComponent } from './patient-inscrit/patient-inscrit.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +34,12 @@ import { AdminComponent } from './admin/admin.component';
     FooterComponent,
     ListeMedecinComponent,
     RendezVousComponent,
-    InscritPatientComponent,
+   
     InscritMedecinComponent,
     DetailleMedecienComponent,
     ConnexionComponent,
-    AdminComponent
+    AdminComponent,
+    PatientInscritComponent
   ],
   imports: [
     BrowserModule,

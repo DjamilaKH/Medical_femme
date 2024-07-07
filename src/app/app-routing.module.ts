@@ -9,9 +9,9 @@ import { BlogComponent } from './blog/blog.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { ListeMedecinComponent } from './liste-medecin/liste-medecin.component';
 import { RendezVousComponent } from './rendez-vous/rendez-vous.component';
-import { InscritPatientComponent } from './inscrit-patient/inscrit-patient.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { InscritMedecinComponent } from './inscrit-medecin/inscrit-medecin.component';
+import { PatientInscritComponent } from './patient-inscrit/patient-inscrit.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/connexion', pathMatch: 'full' }, // Rediriger la route par défaut vers la connexion
@@ -25,9 +25,9 @@ const routes: Routes = [
   { path: 'appointment', component: AppointmentComponent },
   { path: 'listMedecin', component: ListeMedecinComponent },
   { path: 'rendez-vous', component: RendezVousComponent },
-  { path: 'sinscrirep', component: InscritPatientComponent },
+  { path: 'inscripa', component:PatientInscritComponent},
   { path: 'connexion', component: ConnexionComponent },
-  { path: 'sinscrirem', component: InscritMedecinComponent },
+  { path: 'inscrimed', component: InscritMedecinComponent },
 ];
 
 @NgModule({

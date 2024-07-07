@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-liste-medecin',
@@ -7,22 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListeMedecinComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
   }
 
   // Fonctions à définir pour chaque bouton
   lireSuite() {
-    // Logique pour "Lire suite"
+    this.router.navigate(['/service'])
   }
 
   rendezVous() {
-    // Logique pour "Rendez-vous"
-  }
-
-  annuler() {
-    // Logique pour "Annuler"
+    this.router.navigate(['/rendez-vous'])
   }
 
 

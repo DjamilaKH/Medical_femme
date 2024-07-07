@@ -1,0 +1,80 @@
+<div class="page-wrapper">
+    <!-- Page Title -->
+    <section class="page-title text-center" style="background-image:url(../../assets/img/background/3.jpg);">
+        <div class="container">
+            <div class="title-text">
+                <h1>Inscription du Patient</h1>
+            </div>
+        </div>
+    </section>
+    <!-- End Page Title -->
+
+    <div class="content-container">
+        <div class="gif-section">
+            <h2>Pour les Patients</h2>
+            <div class="gif-container">
+            
+                <img src="../../assets/images/about/gifpatient1.gif" alt="Gif 2">
+                
+            </div>
+        </div>
+
+        <div class="form-container">
+          
+            <h2>Inscription du Patient</h2>
+            <form (ngSubmit)="onSubmit()" #form="ngForm">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" ngModel required>
+                </div>
+
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" ngModel required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date_naissance">Date de naissance :</label>
+                    <input type="date" id="date_naissance" name="date_naissance" ngModel required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse email :</label>
+                    <input type="email" id="email" name="email" ngModel required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telephone">Numéro de téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" ngModel required>
+                </div>
+
+                <div class="form-group">
+                    <label for="adresse">Adresse :</label>
+                    <textarea id="adresse" name="adresse" rows="2" ngModel required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="sexe">Sexe :</label>
+                    <select id="sexe" name="sexe" ngModel required>
+                        <option value="male">Homme</option>
+                        <option value="female">Femme</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="antecedents">Antécédents médicaux :</label>
+                    <textarea id="antecedents" name="antecedents" rows="2" ngModel required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="allergies">Allergies :</label>
+                    <textarea id="allergies" name="allergies" rows="2" ngModel required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">S'inscrire</button>
+                <a routerLink="/inscrimed" class="btn-professional">Vous êtes professionnel ?</a>
+            </form>
+        </div>
+    </div>
+</div>
