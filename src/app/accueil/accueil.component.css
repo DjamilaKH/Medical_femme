@@ -327,3 +327,32 @@
     background-color: #ff69b4; /* Couleur rose vif au survol des liens */
   }
   
+  .feature-section {
+    background-image: url('../../assets/images/background/promo-video.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e5e5e5; /* Ajoutez une couleur de fond de secours */
+  }
+
+
+
+.service-tab{  background-image: url('../../assets/images/background//ff3058da-719d-4e29-823d-9018fb20745c.jpg'); /* Remplacez par le chemin de votre image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e5e5e5;}
+  .service-tab-section {
+    background-image: url('../../assets/images/background//flowers-colorful.gif'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e5e5e5; /* Ajoutez une couleur de fond de secours */
+  }
+  .team-section {
+    background-image: url('../../assets/images/background/coeur.gif'); /* Remplacez par le chemin de votre image */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  

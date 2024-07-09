@@ -1,23 +1,60 @@
 .video-gallery-item .image-holder {
-    position: relative;
-    border-radius: 3px;
-    overflow: hidden;
-    /* Supprimez la boîte d'ombre */
-    box-shadow: none; /* ou box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0); */
-  
-    /* Pour uniformiser la taille des vidéos */
-    width: 70%; /* ou une largeur spécifique */
-    height: auto; /* ou une hauteur spécifique */
-  
-    /* Assurez-vous que le contenu vidéo est centré */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .video-gallery-item .image-holder video {
-    width: 100%; /* Utilisez une largeur de 100% pour remplir le conteneur */
-    height: auto; /* Laissez la hauteur ajustée automatiquement pour maintenir le rapport d'aspect */
-    box-shadow: none;
-  }
-  
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-gallery-item .image-holder video {
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.section-title h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-title span {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.page-title {
+  padding: 50px 0;
+  color: #fff;
+}
+
+.title-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.title-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.title-menu li {
+  display: inline;
+  font-size: 16px;
+}
+
+.title-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.title-menu a:hover {
+  text-decoration: underline;
+}
