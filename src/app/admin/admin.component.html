@@ -1,1 +1,14 @@
-<p>admin works!</p>
+<div class="admin-dashboard">
+    <div class="sidebar">
+      <ul>
+        <li><a routerLink="/admin/patients">Gérer les Patients</a></li>
+        <li><a routerLink="/admin/doctors">Gérer les Médecins</a></li>
+        <li><a routerLink="/admin/rules">Calendrier de Règles</a></li>
+        <li><a routerLink="/admin/pregnancy">Calendrier de Grossesse</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

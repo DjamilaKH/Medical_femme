@@ -12,8 +12,11 @@ import { RendezVousComponent } from './rendez-vous/rendez-vous.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { InscritMedecinComponent } from './inscrit-medecin/inscrit-medecin.component';
 import { PatientInscritComponent } from './patient-inscrit/patient-inscrit.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
+  { path: 'admin', component: AdminComponent},
+
   { path: '', redirectTo: '/connexion', pathMatch: 'full' }, // Rediriger la route par défaut vers la connexion
   { path: '', component: AccueilComponent },
   { path: 'accueil', component: AccueilComponent },

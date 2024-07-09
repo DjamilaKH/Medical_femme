@@ -1,64 +1,329 @@
-.top-right {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.social-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px; /* Ajoute de l'espace entre les icônes */
-}
-
-.social-links li {
-    display: inline-block;
-}
-
-.social-links a {
-    color: #ffc0cb; /* Couleur rose clair */
-    font-size: 20px; /* Taille des icônes */
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #ff69b4; /* Couleur rose vif au survol */
-}
-.slider-item {
-    position: relative; /* Pour permettre le positionnement absolu des enfants */
-}
-
-.top-right {
-    position: absolute;
-    top: 10px; /* Ajustez la valeur selon vos besoins */
-    right: 10px; /* Ajustez la valeur selon vos besoins */
-    display: flex;
-    justify-content: flex-end;
+.hero-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slider-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: none; /* Hide all slides by default */
     align-items: center;
-    z-index: 10; /* S'assure que les icônes sont au-dessus de l'image de fond */
-    background: rgba(255, 255, 255, 0.3); /* Fond transparent */
-    border-radius: 5px; /* Coins arrondis */
-    padding: 5px; /* Espacement interne */
-}
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slider-item.active {
+    display: flex; /* Show the active slide */
+    opacity: 1;
+  }
+  
+  .slider-item.slide-in-right {
+    animation: slideInRight 1s forwards;
+  }
+  
+  .slider-item.slide-in-left {
+    animation: slideInLeft 1s forwards;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .btn-main {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .btn-white {
+    background-color: white;
+    color: #007bff;
+  }
+  
+  .tag-text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    cursor: pointer;
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-control-next {
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .cta {
+    background-color: #f3f3f3; /* Couleur de fond */
+    padding: 50px 0; /* Espacement intérieur */
+  }
+  
+  .cta-block {
+    margin: 0 auto; /* Centrer le contenu */
+  }
+  
+  .item {
+    text-align: center; /* Centrer le contenu des éléments */
+    padding: 20px; /* Espacement intérieur */
+  }
+  
+  .item i {
+    font-size: 40px; /* Taille des icônes */
+    margin-bottom: 20px; /* Espacement en bas de l'icône */
+    color: #6cb96c; /* Couleur verte */
+  }
+  
+  .item h2 {
+    color: #6cb96c; /* Couleur verte pour les titres */
+    font-size: 24px; /* Taille du titre */
+    margin-bottom: 15px; /* Espacement en bas du titre */
+  }
+  
+  .item p {
+    font-size: 16px; /* Taille du texte */
+    line-height: 1.6; /* Interligne */
+    color: #666; /* Couleur du texte gris */
+  }
+  
+  .item a {
+    background-color: #ffb6c1; /* Couleur rose bébé pour le bouton */
+    color: #fff; /* Texte blanc pour le bouton */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    text-transform: uppercase; /* Texte en majuscules */
+    display: inline-block; /* Affichage en ligne */
+    margin-top: 15px; /* Espacement en haut du bouton */
+    text-decoration: none; /* Pas de soulignement */
+  }
+  
+  .item a:hover {
+    background-color: #ff69b4; /* Couleur rose vif au survol du bouton */
+  }
 
-.social-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px; /* Espacement entre les icônes */
-}
-
-.social-links li {
-    display: inline-block;
-}
-
-.social-links a {
-    color: #ff69b4; /* Couleur rose clair */
-    font-size: 20px; /* Taille des icônes */
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #ff69b4; /* Couleur rose vif au survol */
-}
+  .feature-section {
+    padding: 50px 0; /* Espacement intérieur */
+  }
+  
+  .section-title h3 {
+    color: #6cb96c; /* Couleur verte pour le titre principal */
+  }
+  
+  .section-title span {
+    color: #ffb6c1; /* Couleur rose bébé pour le sous-titre */
+  }
+  
+  .item {
+    margin-bottom: 30px; /* Espacement entre chaque élément */
+    text-align: center; /* Centrer le contenu */
+  }
+  
+  .item h3 {
+    color: #6cb96c; /* Couleur verte pour les titres des caractéristiques */
+    font-size: 24px; /* Taille du titre */
+    margin-bottom: 15px; /* Espacement en bas du titre */
+  }
+  
+  .item p {
+    color: #666; /* Couleur du texte gris */
+    font-size: 16px; /* Taille du texte */
+    line-height: 1.6; /* Interligne */
+  }
+  
+  .item a {
+    background-color: #ffb6c1; /* Couleur rose bébé pour les liens */
+    color: #fff; /* Texte blanc pour les liens */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement intérieur */
+    text-transform: uppercase; /* Texte en majuscules */
+    display: inline-block; /* Affichage en ligne */
+    margin-top: 15px; /* Espacement en haut */
+    text-decoration: none; /* Pas de soulignement */
+  }
+  
+  .item a:hover {
+    background-color: #ff69b4; /* Couleur rose vif au survol des liens */
+  }
+  .service-section {
+    padding: 50px 0; /* Espacement intérieur */
+  }
+  
+  .section-title h3 {
+    color: #6cb96c; /* Couleur verte pour le titre principal */
+  }
+  
+  .section-title span {
+    color: #ffb6c1; /* Couleur rose bébé pour le sous-titre */
+  }
+  
+  .item {
+    margin-bottom: 30px;
+   
+   height: auto;
+    padding: auto; /* Espacement entre chaque item */
+  }
+  
+  .icon-box {
+    position: relative; /* Position relative pour le conteneur d'icône */
+    overflow: hidden; /* Masquer toute icône débordante */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  .icon-box img {
+    width: 100%; /* Image occupant toute la largeur du conteneur */
+    transition: transform 0.3s ease; /* Transition fluide pour l'image */
+    max-width: 300px;
+  }
+  
+  .icon-box:hover img {
+    transform: scale(1.1); /* Agrandir légèrement l'image au survol */
+  }
+  
+  .image-content {
+    background-color: #f9f9f9; /* Couleur de fond pour le contenu */
+    padding: 20px; /* Espacement intérieur */
+    border-bottom-left-radius: 8px; /* Coins arrondis bas-gauche */
+    border-bottom-right-radius: 8px; /* Coins arrondis bas-droit */
+  }
+  
+  .image-content span {
+    color: #6cb96c; /* Couleur verte pour le texte en surbrillance */
+    font-weight: bold; /* Texte en gras */
+  }
+  
+  .image-content h6 {
+    margin-top: 10px; /* Espacement en haut du titre */
+    font-size: 18px; /* Taille du titre */
+    color: #333; /* Couleur du texte */
+  }
+  
+  .image-content p {
+    color: #666; /* Couleur du texte gris */
+    font-size: 14px; /* Taille du texte */
+    line-height: 1.6; /* Interligne */
+  }
+  
+  .image-content a {
+    background-color: #ffb6c1; /* Couleur rose bébé pour les liens */
+    color: #fff; /* Texte blanc pour les liens */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement intérieur */
+    text-transform: uppercase; /* Texte en majuscules */
+    display: inline-block; /* Affichage en ligne */
+    margin-top: 15px; /* Espacement en haut */
+    text-decoration: none; /* Pas de soulignement */
+  }
+  
+  .image-content a:hover {
+    background-color: #ff69b4; /* Couleur rose vif au survol des liens */
+  }
+  
+  .team-section {
+    padding: 50px 0; /* Espacement intérieur */
+    
+  }
+  
+  .section-title h3 {
+    color: #6cb96c; /* Couleur verte pour le titre principal */
+  }
+  
+  .section-title span {
+    color: #ffb6c1; /* Couleur rose bébé pour le sous-titre */
+  }
+  
+  .team-member {
+    position: relative; /* Position relative pour le conteneur de membre d'équipe */
+    overflow: hidden; /* Masquer tout débordement */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  .team-member img {
+    width: 100%; /* Image occupant toute la largeur */
+    transition: transform 0.3s ease; /* Transition fluide pour l'image */
+  }
+  
+  .team-member:hover img {
+    transform: scale(1.1); /* Agrandir légèrement l'image au survol */
+  }
+  
+  .contents {
+    background-color: #f9f9f9; /* Couleur de fond pour le contenu */
+    padding: 20px; /* Espacement intérieur */
+    border-bottom-left-radius: 8px; /* Coins arrondis bas-gauche */
+    border-bottom-right-radius: 8px; /* Coins arrondis bas-droit */
+  }
+  
+  .contents h4 {
+    margin-top: 15px; /* Espacement en haut du titre */
+    font-size: 22px; /* Taille du titre */
+    color: #333; /* Couleur du texte */
+  }
+  
+  .contents p {
+    color: #666; /* Couleur du texte gris */
+    font-size: 14px; /* Taille du texte */
+    line-height: 1.6; /* Interligne */
+  }
+  
+  .contents a {
+    background-color: #ffb6c1; /* Couleur rose bébé pour les liens */
+    color: #fff; /* Texte blanc pour les liens */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement intérieur */
+    text-transform: uppercase; /* Texte en majuscules */
+    display: inline-block; /* Affichage en ligne */
+    margin-top: 15px; /* Espacement en haut */
+    text-decoration: none; /* Pas de soulignement */
+  }
+  
+  .contents a:hover {
+    background-color: #ff69b4; /* Couleur rose vif au survol des liens */
+  }
+  
