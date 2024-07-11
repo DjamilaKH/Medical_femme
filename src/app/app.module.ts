@@ -19,6 +19,10 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { PatientInscritComponent } from './patient-inscrit/patient-inscrit.component';
+import { environment } from './environnelent';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,11 @@ import { PatientInscritComponent } from './patient-inscrit/patient-inscrit.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

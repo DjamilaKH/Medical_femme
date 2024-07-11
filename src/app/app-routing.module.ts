@@ -17,7 +17,7 @@ import { AdminComponent } from './admin/admin.component';
 const routes: Routes = [
   { path: 'admin', component: AdminComponent},
 
-  // { path: '', redirectTo: '/connexion', pathMatch: 'full' }, 
+  { path: '', redirectTo: '/connexion', pathMatch: 'full' }, 
   { path: '', component: AccueilComponent },
   { path: 'accueil', component: AccueilComponent },
   { path: 'about', component: AboutComponent },
