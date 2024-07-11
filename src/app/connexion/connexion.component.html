@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> connectez-vous à Medic </title>
+    <title>Connectez-vous à Medic</title>
     <link rel="stylesheet" href="connexion.component.css">
 </head>
 
@@ -12,7 +12,7 @@
     <div class="container">
         <div class="login-container">
             <div class="image-container">
-                <img  src="../../assets/images/background/95d1f40dae55775ee9d5e75bc2c86be4.gif" alt="Boule de neige rose">
+                <img src="../../assets/images/background/95d1f40dae55775ee9d5e75bc2c86be4.gif" alt="Boule de neige rose">
             </div>
             <div class="form-container">
                 <h3>Connectez-Vous à Medic</h3>
@@ -25,18 +25,15 @@
                         <label for="password">Mot de passe</label>
                         <input type="password" id="password" name="password" ngModel placeholder="Entrez votre mot de passe" required>
                     </div>
-                    <button   type="submit" style="background-color: rgb(238, 150, 227);">Connexion</button>
+                    <button type="submit" style="background-color: rgb(238, 150, 227);">Connexion</button>
                 </form>
-        
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div class="text-center">
-                    <h3 style="margin-top: 20px;">Vous n'avez pas de compte ? Choisissez votre rôle : </h3> 
+                <div class="register-link">
+                    <h3>Vous n'avez pas de compte ? Choisissez votre rôle :</h3>
                     <p>
-                        <a  routerLink="/inscrimed" style="color: rgb(238, 150, 227);"><b> Je suis un médecin</b></a>
+                        <a routerLink="/inscrimed" style="color: rgb(238, 150, 227);"><b>Je suis un médecin</b></a>
                     </p>
                     <p>
-                        <a  routerLink="/inscripa" style="color: rgb(238, 150, 227);" ><b>Je suis un patient</b></a>
+                        <a routerLink="/inscripa" style="color: rgb(238, 150, 227);"><b>Je suis un patient</b></a>
                     </p>
                 </div>
             </div>
@@ -45,4 +42,3 @@
 </body>
 
 </html>
-this.router.navigate(['/connexion'])

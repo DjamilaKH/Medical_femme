@@ -1,4 +1,12 @@
 
+<<<<<<< HEAD
 <app-navbar></app-navbar>
 <router-outlet></router-outlet> 
 <app-footer></app-footer>
+=======
+
+<!-- app.component.html -->
+<app-navbar *ngIf="isLoggedIn"></app-navbar>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+<app-footer *ngIf="isLoggedIn"></app-footer>
+>>>>>>> f2a04776390629b0970c0948a5d02661a07cae48
