@@ -1,3 +1,6 @@
 
 
-<router-outlet></router-outlet> 
+<!-- app.component.html -->
+<app-navbar *ngIf="isLoggedIn"></app-navbar>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+<app-footer *ngIf="isLoggedIn"></app-footer>
