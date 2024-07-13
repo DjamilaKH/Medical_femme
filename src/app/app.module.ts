@@ -23,7 +23,10 @@ import { environment } from './environnelent';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { PeriodeGrossesseCalendrierComponent } from './periode-grossesse-calendrier/periode-grossesse-calendrier.component';
+import { QRCodeModule } from 'angularx-qrcode';
+import { QrCodeGeneratorComponent } from './qr-code-generator/qr-code-generator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,18 +46,26 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     DetailleMedecienComponent,
     ConnexionComponent,
     AdminComponent,
-    PatientInscritComponent
+    PatientInscritComponent,
+    PeriodeGrossesseCalendrierComponent,
+    QrCodeGeneratorComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    QRCodeModule,
+
     
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

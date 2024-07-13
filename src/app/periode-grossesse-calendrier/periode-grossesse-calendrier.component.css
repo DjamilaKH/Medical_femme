@@ -1,0 +1,29 @@
+.container {
+    max-width: 800px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .alert {
+    margin-top: 20px;
+  }
+  .background-container {
+    background-image: url('../../assets/images/background//test.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Ajustez cette hauteur selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

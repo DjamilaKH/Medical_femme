@@ -13,6 +13,8 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { InscritMedecinComponent } from './inscrit-medecin/inscrit-medecin.component';
 import { PatientInscritComponent } from './patient-inscrit/patient-inscrit.component';
 import { AdminComponent } from './admin/admin.component';
+import { PeriodeGrossesseCalendrierComponent } from './periode-grossesse-calendrier/periode-grossesse-calendrier.component';
+import { QrCodeGeneratorComponent } from './qr-code-generator/qr-code-generator.component';
 
 const routes: Routes = [
   { path: 'admin', component: AdminComponent},
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path: 'service', component: ServiceComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'perdgross', component: PeriodeGrossesseCalendrierComponent },
+  { path: 'qr', component: QrCodeGeneratorComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'appointment', component: AppointmentComponent },
   { path: 'listMedecin', component: ListeMedecinComponent },
@@ -31,6 +35,8 @@ const routes: Routes = [
   { path: 'inscripa', component:PatientInscritComponent},
   { path: 'connexion', component: ConnexionComponent },
   { path: 'inscrimed', component: InscritMedecinComponent },
+
+
 ];
 
 @NgModule({
